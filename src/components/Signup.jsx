@@ -26,7 +26,8 @@ const Signup = () => {
             setName('');
             setEmail('');
             setPassword('');
-            navigate('/login');
+            // navigate('/login');
+            navigate('/check-inbox');
           } else if (res.status === 409) {
             alert("A user with this email already exists. Please use another email.");
           } else {
